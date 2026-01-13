@@ -156,13 +156,13 @@ export default function CovidDashboard() {
     }
   };
 
-  useEffect(() => {
-    fetchCovidData();
-  }, []);
-
   const handleFilterChange = (field, value) => {
     setFilters(prev => ({ ...prev, [field]: value }));
   };
+
+  useEffect(() => {
+    fetchCovidData();
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-8 rounded-lg">
