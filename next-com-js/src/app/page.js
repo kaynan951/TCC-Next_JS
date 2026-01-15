@@ -186,22 +186,24 @@ export default function CovidDashboard() {
             <div className="flex items-end gap-4 w-full md:w-auto md:flex-row flex-col">
               <div className="w-full">
                 <label className="block text-sm font-medium text-gray-700 mb-2 flex-wrap">Estado</label>
-                <select
-                  value={filters.province}
-                  onChange={(e) => handleFilterChange('province', e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                >
-                  <option value="All">Todos os estados</option>
-                  <option value="Alagoas">Alagoas</option>
-                  <option value="Bahia">Bahia</option>
-                  <option value="Ceará">Ceará</option>
-                  <option value="Maranhão">Maranhão</option>
-                  <option value="Paraíba">Paraíba</option>
-                  <option value="Pernambuco">Pernambuco</option>
-                  <option value="Piauí">Piauí</option>
-                  <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                  <option value="Sergipe">Sergipe</option>
-                </select>
+                <div className="flex gap-2">
+                  <select
+                    value={filters.province}
+                    onChange={(e) => handleFilterChange('province', e.target.value)}
+                    className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  >
+                    <option value="All">Todos os estados</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Sergipe">Sergipe</option>
+                  </select>
+                </div>
               </div>
               <div className="w-full">
                 <label className="block text-sm font-medium text-gray-700 mb-2">Data específica</label>
