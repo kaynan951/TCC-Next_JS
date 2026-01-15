@@ -181,7 +181,7 @@ export default function CovidDashboard() {
 
         {/* Filters */}
         <div className="bg-white rounded-2xl shadow-lg p-6">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between flex-wrap gap-4">
             <h2 className="text-2xl font-semibold text-gray-800 gap-2">Filtros de Busca</h2>
             <div className="flex items-end gap-4 w-full md:w-auto md:flex-row flex-col">
               <div className="w-full">
@@ -189,7 +189,7 @@ export default function CovidDashboard() {
                 <select
                   value={filters.province}
                   onChange={(e) => handleFilterChange('province', e.target.value)}
-                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 >
                   <option value="All">Todos os estados</option>
                   <option value="Alagoas">Alagoas</option>
