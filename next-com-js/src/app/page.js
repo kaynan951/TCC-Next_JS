@@ -162,6 +162,7 @@ export default function CovidDashboard() {
 
   useEffect(() => {
     fetchCovidData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
